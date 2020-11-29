@@ -20,3 +20,10 @@ ces_clean_names <- ces %>%
   janitor::clean_names()
 ```
 
+## Scatterplot
+```{r}
+ggplot(data = ces_clean_names, aes(x = white, y = ces_3_0_score)) +
+  geom_point()
+```
+
+
