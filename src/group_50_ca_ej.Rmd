@@ -32,4 +32,6 @@ ggplot(data = ces_clean_names, aes(x = white, y = ces_3_0_score)) +
   theme_minimal()
 ```
 
+There is a clear negative relationship between the % of a census tract identifying as White and pollution burden (i.e., census tracts with greater proportions of non-White residents tend to experience greater pollution burden).
 
+Good job Shane, done with Part 1!
