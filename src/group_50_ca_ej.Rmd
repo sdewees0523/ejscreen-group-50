@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(janitor)
 library(here)
+library(hexbin)
 ```
 
 ## Reading in data
@@ -23,7 +24,9 @@ ces_clean_names <- ces %>%
 ## Scatterplot
 ```{r}
 ggplot(data = ces_clean_names, aes(x = white, y = ces_3_0_score)) +
-  geom_point()
+  geom_hex()+
+  labs(x= "Percent of population that is white",
+       y = "CalEnvrioScreen 3.0 cummalitive pollution burden score")
 ```
 
 
