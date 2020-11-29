@@ -1,0 +1,22 @@
+---
+title: "Group 50 Ca pollution burden"
+author: "Shane Dewees and Allison Horst"
+date: "11/29/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+## Reading in data
+
+```{r}
+ces <- read.csv(here("data", "ces3demographics.csv"))
+ces_clean_names <- ces %>% 
+  janitor::clean_names()
+```
+
