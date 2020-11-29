@@ -26,8 +26,9 @@ ces_clean_names <- ces %>%
 ggplot(data = ces_clean_names, aes(x = white, y = ces_3_0_score)) +
   geom_hex()+
   labs(x= "Percent of population that is white",
-       y = "CalEnvrioScreen 3.0 cummalitive pollution burden score") +
-  scale_fill_gradient(low = "darkorchid4", high = "magenta") +
+       y = "CalEnvrioScreen 3.0 cummalitive pollution burden score",
+       title = "Variation in CES 3.0 cummulative pollution burden score as commuties \n have higher percent that is white") +
+  scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 ```
 
